@@ -1,0 +1,28 @@
+---
+title: "Report"
+format: html
+message: false
+---
+
+## Iris
+
+Iris table
+
+```{r}
+#| message: false
+library(tidyverse)
+count(iris, Species)
+```
+
+table
+
+```{r}
+library(knitr)
+count(iris, Species)
+```
+
+ggplot
+```{r}
+ggplot(iris, aes(Species, Sepal.Length)) +
+  geom_boxplot()
+```
