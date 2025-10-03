@@ -28,8 +28,8 @@ kable(count(iris, Species))
 ```{r}
 #| message: false
 #| warning: false
-library(gt)
-gt(count(iris, Species))
+library(flextable)
+qflextable(count(iris, Species))
 ```
 
 ggplot
