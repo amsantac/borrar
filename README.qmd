@@ -2,6 +2,7 @@
 title: "Report"
 format: md
 message: false
+warning: false
 ---
 
 ## Iris
@@ -10,6 +11,7 @@ Iris table
 
 ```{r}
 #| message: false
+#| warning: false
 library(tidyverse)
 count(iris, Species)
 ```
@@ -17,11 +19,15 @@ count(iris, Species)
 table
 
 ```{r}
+#| message: false
+#| warning: false
 library(knitr)
 kable(count(iris, Species))
 ```
 
 ```{r}
+#| message: false
+#| warning: false
 library(gt)
 gt(count(iris, Species))
 ```
