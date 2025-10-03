@@ -1,6 +1,6 @@
 ---
 title: "Report"
-format: html
+format: md
 message: false
 ---
 
@@ -18,7 +18,12 @@ table
 
 ```{r}
 library(knitr)
-count(iris, Species)
+kable(count(iris, Species))
+```
+
+```{r}
+library(gt)
+gt(count(iris, Species))
 ```
 
 ggplot
